@@ -3,6 +3,8 @@ from random import randrange, uniform
 import time
 
 # Connect to mqtt Broker
+#
+# mqttBroker = "neo4j"
 mqttBroker = "mqtt.eclipseprojects.io"
 
 # client_name

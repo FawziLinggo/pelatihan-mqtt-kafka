@@ -10,7 +10,7 @@ curl -s -X POST -H 'Content-Type: application/json' http://localhost:8083/connec
   "tasks.max" : "1",
   "mqtt.server.uri" : "tcp://localhost:1883",
   "mqtt.topics" : "Temperature",
-  "kafka.topics" : "Temperature"
+  "kafka.topics" : "mqtt"
   }
 }'
 
