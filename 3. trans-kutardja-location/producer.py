@@ -2,7 +2,7 @@ import uuid
 
 from pykafka import KafkaClient
 import json
-from datetime import  datetime
+from datetime import datetime
 import time
 
 '''
@@ -19,7 +19,7 @@ producer.produce('test message'.encode('ascii'))
 
 
 # READ COORDINAT FROM GEOJSON
-input_file= open('/home/adi/fawzi_linggo/pelatihan-mqtt-kafka/3. trans-kutardja-location/location/transkutaraja_1.json')
+input_file= open('3. trans-kutardja-location/location/transkutaraja_1.json')
 json_array = json.load(input_file)
 coordinates = json_array['features'][0]['geometry']['coordinates']
 

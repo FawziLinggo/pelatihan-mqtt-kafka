@@ -1,13 +1,13 @@
 import paho.mqtt.client as mqtt
 import time
-
+# ym/.#sB*AmZ-H7q
 
 
 # Method Callback
 def on_message(client, userdata,message):
     print("Received message: ", str(message.payload.decode("utf-8")))
 
-mqttBroker = "mqtt.eclipseprojects.io"
+mqttBroker = "broker.mqtt-dashboard.com"
 client = mqtt.Client("Smartphone_indo")
 client.connect(mqttBroker)
 

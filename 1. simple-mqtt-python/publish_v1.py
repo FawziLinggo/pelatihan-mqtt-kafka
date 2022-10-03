@@ -1,14 +1,12 @@
 import paho.mqtt.client as mqtt
-from random import randrange, uniform
+from random import uniform
 import time
 
 # Connect to mqtt Broker
-#
-# mqttBroker = "neo4j"
-mqttBroker = "mqtt.eclipseprojects.io"
+mqttBroker = "broker.mqtt-dashboard.com"
 
 # client_name
-client = mqtt.Client("Temperature_Inside")
+client = mqtt.Client("Temperature")
 client.connect(mqttBroker)
 
 #topic name
