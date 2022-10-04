@@ -14,14 +14,14 @@ mapMarkers1 = [];
 mapMarkers2 = [];
 mapMarkers3 = [];
 
-var source = new EventSource('/topic/cars_location'); //ENTER YOUR TOPICNAME HERE
+var source = new EventSource('/topic/pelatihan'); //ENTER YOUR TOPICNAME HERE
 source.addEventListener('message', function(e){
 
   console.log('Message');
   obj = JSON.parse(e.data);
   console.log(obj);
 
-  if(obj.kutardaja == 'BL 0v3 U') {
+  if(obj.kutardaja == 'BL 1234 Q') {
     for (var i = 0; i < mapMarkers1.length; i++) {
       mymap.removeLayer(mapMarkers1[i]);
     }

@@ -38,7 +38,7 @@ go to path :
 
 ```commandline
 cd ~/confluent-7.2.1/etc/confluent-kafka-mqtt
-kafka-mqtt-start kafka-mqtt-start kafka-mqtt-dev.properties
+kafka-mqtt-start kafka-mqtt-dev.properties
 ```
 
 so we have run rest mqtt. next we will try to do streaming processing using ksqldb
